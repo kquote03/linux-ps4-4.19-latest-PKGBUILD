@@ -14,7 +14,7 @@ makedepends=(
   xmlto python-sphinx python-sphinx_rtd_theme graphviz imagemagick
 )
 options=('!strip')
-_srcname=linux-ps4-4.14-latest
+_srcname=linux-ps4-4.19-latest
 source=(
   'git+https://github.com/kquote03/linux-ps4-4.19-latest'
   config         # the main kernel config file
