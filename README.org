@@ -1,0 +1,14 @@
+* PKGBUILDs of PS4 4.14-latest
+Title explains all. Also installs linux-git-headers, DKMS should work, I tested it with v4l2loopbak-dkms and it worked. Based on vanilla linux-git PKGBUILD from the AUR.
+
+** Installing
+clone this repo and run =makepkg --skipinteg -si=
+Then copy /boot/vmlinuz-linux-git to your PS4's fat32 boot drive as bzImage.
+*** Eg:
+If /mnt was my fat32 partition, then
+=# mv /mnt/bzImage /mnt/bzImage.bak=
+=# cp /boot/vmlinuz-linux-git /mnt/bzImage=
+
+** TODO
+*TODO*
+- Make a script that generates an sha sum and inserts it into the PKGBUILD so =--skipinteg= is no longer needed (and for security :P)
