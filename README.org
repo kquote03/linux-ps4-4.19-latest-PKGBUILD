@@ -1,8 +1,8 @@
-* PKGBUILDs of PS4 4.14-latest
+* PKGBUILDs of PS4 4.19-latest
 Title explains all. Also installs linux-git-headers, DKMS should work, I tested it with v4l2loopbak-dkms and it worked. Based on vanilla linux-git PKGBUILD from the AUR.
 
 ** Installing
-clone this repo and run =makepkg --skipinteg -si=
+clone this repo =git clone https://github.com/kquote03/linux-ps4-4.19-latest-PKGBUILD= =cd linux-ps4-4.19-latest-PKGBUILD= and run =makepkg --skipinteg -si=
 Then copy /boot/vmlinuz-linux-git to your PS4's fat32 boot drive as bzImage.
 *** Eg:
 If /mnt was my fat32 partition, then
